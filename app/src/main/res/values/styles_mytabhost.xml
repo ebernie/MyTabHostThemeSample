@@ -20,14 +20,20 @@
 <resources>
 
     <style name="MyTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- styles tab host indicator -->
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Mytabhost</item>
         <item name="actionBarTabStyle">@style/ActionBarTabStyle.Mytabhost</item>
+
+        <!--styles actionbar -->
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 
     <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- action bar background -->
         <item name="background">@drawable/ab_solid_mytabhost</item>
+
+        <!-- needed for 'stacked' & 'split' action bar (used by tabhost) -->
         <item name="backgroundStacked">@drawable/ab_stacked_solid_mytabhost</item>
         <item name="backgroundSplit">@drawable/ab_bottom_solid_mytabhost</item>
     </style>
